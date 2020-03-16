@@ -1,0 +1,16 @@
+* {
+  font-family: "Poiret One", cursive;
+}
+header {
+  margin: 0;
+  padding-top: 50px;
+  color: white;
+  font-size: 3rem;
+  background: black;
+  height: 100px;
+  font-family: "Poiret One", cursive;
+}
+h3 {
+  text-align: left;
+  padding: 10px;
+}

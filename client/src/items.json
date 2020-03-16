@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Burgers",
+    "image": "https://imgur.com/M9pYoNA.png",
+    "description": "yummy",
+    "button": "Save"
+  },
+  {
+    "id": 2,
+    "name": "My Cat",
+    "image": "https://imgur.com/YuLDWRF.png",
+    "description": "Orange Guy",
+    "button": "Save"
+  },
+  {
+    "id": 3,
+    "name": "Corona",
+    "image": "https://imgur.com/HdB1hmV.png",
+    "description": "social distance",
+    "button": "Save"
+  }
+]

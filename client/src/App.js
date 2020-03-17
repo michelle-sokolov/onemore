@@ -7,6 +7,7 @@ import Contact from "./pages/Contact";
 import Blog from "./pages/Blog";
 import Header from "./components/Header";
 import Nav from "./components/Nav";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route exact path="/blog/" component={Blog} />
         </Switch>
       </div>
+      <Footer />
     </Router>
   );
 }

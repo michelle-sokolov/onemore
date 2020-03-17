@@ -33,8 +33,10 @@
     "if-env": "^1.0.4",
     "jslint": "^0.12.1",
     "mongoose": "^5.3.16",
+    "native-base": "^2.8.2",
     "nodemailer": "^6.4.5",
     "passport": "^0.4.1",
-    "passport-local": "^1.0.0"
+    "passport-local": "^1.0.0",
+    "react-native": "^0.61.5"
   }
 }

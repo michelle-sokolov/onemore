@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 // import { HashLink as Link } from "react-router-hash-link";
+import { Link } from "react-router-dom"; 
 
 export default class ArticlePreview extends Component {
   removeUnicode(string) {
@@ -29,6 +30,7 @@ export default class ArticlePreview extends Component {
             )}
             <div className="content">{excerpt}</div>
           </a>
+<<<<<<< HEAD
           {/* <HashLink to={"/blog/" + this.props.post.ID}> */}
 <<<<<<< HEAD
             <button className="btn">Read More</button>
@@ -36,6 +38,11 @@ export default class ArticlePreview extends Component {
           <button className="btn">Read More</button>
 >>>>>>> b2952270fbbced87f2d8ed80ddcf96d09ebcfa3a
           {/* </HashLink> */}
+=======
+          <Link to={"/blog/" + this.props.post.ID}>
+            <button className="btn">Read More</button>
+          </Link>
+>>>>>>> Dilaran
         </div>
       );
     } else {

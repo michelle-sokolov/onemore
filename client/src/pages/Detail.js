@@ -11,7 +11,16 @@ class Detail extends Component {
     return (
       <div>
         <br /> <br />
-        <h2>Shop All Items</h2>
+        <center>
+          <h2>Shop All Items</h2>
+        </center>
+        <center>
+          <h5>
+            Our product is made to order. Once you are ready to make a purchase,
+            <a href="/contact">contact us here</a> and we'll get the process
+            started.
+          </h5>
+        </center>
         {this.state.items.map(item => (
           <Items {...item} key={item.id} />
         ))}

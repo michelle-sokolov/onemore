@@ -8,9 +8,11 @@ function Header() {
     padding: "10px",
     fontFamily: "'Poiret One', cursive"
   };
+
   return (
     <header>
       <h2 style={mystyle}>Raven's Restoration</h2>
+      <br />
     </header>
   );
 }

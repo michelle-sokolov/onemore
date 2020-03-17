@@ -15,6 +15,9 @@ function Nav() {
         <a style={mystyle} href="/search">
           Shop All{" "}
         </a>
+        <a style={mystyle} href="/wishlist">
+          My Wishlist{" "}
+        </a>
         <a style={mystyle} href="/contact">
           Custom Woodwork{" "}
         </a>

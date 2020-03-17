@@ -22,12 +22,12 @@ const FooterPage = () => {
               <li className="list-unstyled">
                 <a href="#!">Link 2</a>
               </li>
-              <li className="list-unstyled">
+              {/* <li className="list-unstyled">
                 <a href="#!">Link 3</a>
               </li>
               <li className="list-unstyled">
                 <a href="#!">Link 4</a>
-              </li>
+              </li> */}
             </ul>
           </MDBCol>
         </MDBRow>

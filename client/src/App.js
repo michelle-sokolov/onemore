@@ -9,6 +9,7 @@ import Header from "./components/Header";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer/Footer";
 import Article from "./components/article";
+import "./components/style.css";
 function App() {
   return (
     <Router>

@@ -5,7 +5,8 @@ const mystyle = {
   contentAlign: "center",
   padding: "25px",
   width: "400px",
-  height: "400px"
+  height: "400px",
+  bottomPadding: "100px"
 };
 
 export default class ContactForm extends React.Component {

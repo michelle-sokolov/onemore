@@ -1,6 +1,5 @@
 import React from "react";
 import About from "./About";
-import Category from './category'
 
 function HomeItem() {
   return (

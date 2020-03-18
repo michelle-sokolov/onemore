@@ -7,7 +7,7 @@ const FooterPage = () => {
       <MDBContainer fluid className="text-center text-md-left">
         <MDBRow>
           <MDBCol md="6">
-            <h5 className="title">Footer Content</h5>
+            <h5 className="title">Thank you for visiting</h5>
             <p>
               You also can visit us at our pop-up space at 234 S Beverly Dr
             </p>

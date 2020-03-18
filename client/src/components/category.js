@@ -39,7 +39,7 @@ export default class Category extends Component {
   };
   handleRender = () =>{
       console.log("render clicked")
-    this.setState({renderCat:false})
+        this.setState({ renderCat: false, items: items });
   }
   render() {
     return (

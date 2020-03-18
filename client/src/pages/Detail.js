@@ -4,7 +4,7 @@ import Items from "../components/Items";
 import SaveBtn from "../components/SaveBtn";
 import items from "../items.json";
 
-class Detail extends Component {
+class One extends Component {
   state = {
     items: items
   };
@@ -30,4 +30,4 @@ class Detail extends Component {
   }
 }
 
-export default Detail;
+export default One;

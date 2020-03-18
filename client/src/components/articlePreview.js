@@ -30,26 +30,13 @@ export default class ArticlePreview extends Component {
             )}
             <div className="content">{excerpt}</div>
           </a>
-
-          {/* <HashLink to={"/blog/" + this.props.post.ID}> */}
-
-            <button className="btn">Read More</button>
-
-          <button className="btn">Read More</button>
-
-          {/* </HashLink> */}
-
           <Link to={"/blog/" + this.props.post.ID}>
             <button className="btn">Read More</button>
           </Link>
-
         </div>
       );
     } else {
       return null;
     }
   }
-
 }
-
-

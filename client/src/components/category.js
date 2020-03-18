@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 // import { Link } from "react-router-dom";
-import Detail from "../pages//Detail";
+import Details from "./Details"
 import items from "../items.json";
 // import {
 //     View,
@@ -23,7 +23,7 @@ export default class Category extends Component {
 
     // read the items db
     let categories = [];
-    items.map(cat => {
+    items.forEach(cat => {
       if (categories.indexOf(cat.category) === -1) {
         categories.push(cat.category);
       }
@@ -48,7 +48,7 @@ export default class Category extends Component {
         {this.state.renderCat ? (
             <div>
             <button onClick={() => this.handleRender()}>Backk to Categories</button>
-          <Detail cat={this.state.cat} items={this.state.items} />
+          <Details cat={this.state.cat} items={this.state.items} />
           </div>
 
         ) : (

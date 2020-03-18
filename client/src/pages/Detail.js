@@ -1,4 +1,3 @@
-
 import React, { Component } from "react";
 import Items from "../components/Items";
 import SaveBtn from "../components/SaveBtn";
@@ -6,12 +5,13 @@ import items from "../items.json";
 
 class One extends Component {
   state = {
-    items: items
+    items
   };
+
   render() {
     return (
       <div>
-        <br /> <br />
+        <br />
         <center>
           <h2>Shop All Items</h2>
         </center>

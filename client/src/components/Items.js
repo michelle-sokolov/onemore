@@ -1,4 +1,6 @@
 import React from "react";
+import "./Details.css";
+
 // import SaveBtn from "../components/SaveBtn";
 
 const mystyle = {
@@ -15,26 +17,32 @@ function Items(props) {
     alert(props.name + " was clicked");
   }
   return (
-    <div>
+    <div className="wrapper">
       <div>
-        <img style={mystyle} alt={props.name} src={props.image} />
-        <ul>
-          <li style={pagestyle}>
-            <strong>Name:</strong> {props.name}
-          </li>
-          <li>
-            <strong>Description:</strong> {props.description}
-          </li>
-          <li>
-            <strong>Dimensions:</strong> {props.dimensions}
-          </li>
-          <li>
-            <strong>Price:</strong> {props.price}
-          </li>
-          <button onClick={handleClick}>{props.button}</button>
-        </ul>
-        <br />
-        <br />
+        <div className="card">
+          <div className="content">
+            <center>
+              <img style={mystyle} alt={props.name} src={props.image} />
+            </center>
+            <ul>
+              <li style={pagestyle}>
+                <strong>Name:</strong> {props.name}
+              </li>
+              <li>
+                <strong>Description:</strong> {props.description}
+              </li>
+              <li>
+                <strong>Dimensions:</strong> {props.dimensions}
+              </li>
+              <li>
+                <strong>Price:</strong> {props.price}
+              </li>
+              <button onClick={handleClick}>{props.button}</button>
+            </ul>
+            <br />
+            <br />
+          </div>
+        </div>
       </div>
     </div>
   );

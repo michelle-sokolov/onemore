@@ -7,9 +7,8 @@ function HomeItem() {
       <br />
       <br />
       <center>
-      <About />
-      <h1>HOME PAGE STUFF GOES HERE</h1>
-      <Carousel>
+        <About />
+        {/*<Carousel>
   <Carousel.Item>
     <img
       className="d-block w-100"
@@ -45,7 +44,7 @@ function HomeItem() {
       <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
     </Carousel.Caption>
   </Carousel.Item>
-</Carousel>
+      </Carousel> */}
       </center>
     </div>
   );

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import HomeItem from "../components/home";
-import Category from '../components/category'
+import Category from "../components/category";
 class Home extends Component {
   render() {
     return (
@@ -13,4 +13,4 @@ class Home extends Component {
     );
   }
 }
-export default Home
+export default Home;

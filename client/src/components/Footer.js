@@ -16,7 +16,7 @@ const imgstyler = {
 function Footer() {
   return (
     <div style={styler}>
-      <img style={imgstyler} src="https://imgur.com/XWmkQCs.png" alt="ig" />
+      {/*<img style={imgstyler} src="https://imgur.com/XWmkQCs.png" alt="ig" /> */}
       <br />
       <br />
       <br />

@@ -6,9 +6,9 @@ import Detail from "./pages/Detail"; //shop all page
 import Contact from "./pages/Contact";
 import Blog from "./pages/Blog";
 import Header from "./components/Header";
-import Footer from "./components/Footer";
+//import Footer from "./components/Footer";
 import Nav from "./components/Nav";
-import Footer from "./components/Footer/Footer";
+//import Footer from "./components/Footer/Footer";
 import Article from "./components/article";
 import "./components/style.css";
 function App() {
@@ -23,10 +23,14 @@ function App() {
           <Route exact path="/search/" component={Detail} />
           <Route exact path="/contact/" component={Contact} />
           <Route exact path="/blog/" component={Blog} />
-          <Route exact path={process.env.PUBLIC_URL + "/blog/:id"} component={Article} />
+          <Route
+            exact
+            path={process.env.PUBLIC_URL + "/blog/:id"}
+            component={Article}
+          />
         </Switch>
       </div>
-      <Footer />
+      {/*<Footer /> */}
     </Router>
   );
 }

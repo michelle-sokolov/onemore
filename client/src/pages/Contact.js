@@ -11,6 +11,9 @@ class Contact extends Component {
       <div>
         <center>
           <ContactForm />
+          <br />
+          <br />
+          <br />
         </center>
       </div>
     );

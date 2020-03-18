@@ -3,7 +3,7 @@ import Items from "../components/Items";
 import SaveBtn from "../components/SaveBtn";
 import items from "../items.json";
 
-class Detail extends Component {
+class One extends Component {
   state = {
     items
   };
@@ -16,7 +16,7 @@ class Detail extends Component {
         </center>
         <center>
           <h5>
-            Our product is made to order. Once your ready to make a purchase,
+            Our product is made to order. Once you are ready to make a purchase,
             <a href="/contact">contact us here</a> and we'll get the process
             started.
           </h5>
@@ -29,4 +29,4 @@ class Detail extends Component {
   }
 }
 
-export default Detail;
+export default One;

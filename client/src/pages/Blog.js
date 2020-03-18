@@ -27,13 +27,6 @@ export default class Blog extends Component {
       <div className="blog">
         <div className="anchor" id="blog" />
         <h1 className="sectionTitle">Articles</h1>
-<<<<<<< HEAD
-        {this.state.posts.map(post => <ArticlePreview post={post} />)}
-      </div>
-    );
-  }
-}
-=======
         {this.state.posts.map(post => (
           <ArticlePreview post={post} />
         ))}
@@ -41,4 +34,4 @@ export default class Blog extends Component {
     );
   }
 }
->>>>>>> b2952270fbbced87f2d8ed80ddcf96d09ebcfa3a
+

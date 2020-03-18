@@ -7,7 +7,7 @@
     "dimensions": "37 feet by 8.5 feet",
     "price": "$45",
     "button": "Save",
-    "category": "one"
+    "category": "Barrell"
   },
   {
     "id": 2,
@@ -17,7 +17,7 @@
     "dimensions": "Diameterof 22 feet and Height of 1.5 feet",
     "price": "$45",
     "button": "Save",
-    "category": "one"
+    "category": "Barrell"
   },
   {
     "id": 3,
@@ -27,7 +27,7 @@
     "dimensions": "Length of 22.5 feet by Width of 7.5 feet by Height: 4 feet",
     "price": "$160",
     "button": "Save",
-    "category": "one"
+    "category": "Cribbage"
   },
   {
     "id": 4,
@@ -37,7 +37,7 @@
     "dimensions": "Length of 60 feet by Width of 17 feet by Height of 20 feet",
     "price": "$475",
     "button": "Save",
-    "category": "two"
+    "category": "Tables"
   },
   {
     "id": 5,
@@ -47,7 +47,7 @@
     "dimensions": "Length of 58 feet by Width of 16 feet by Height of 21.5 feet",
     "price": "$450",
     "button": "Save",
-    "category": "two"
+    "category": "Tables"
   },
   {
     "id": 6,
@@ -57,7 +57,7 @@
     "dimensions": "All boards can be made to your specific dimensions.",
     "price": "$45",
     "button": "Save",
-    "category": "two"
+    "category": "Cutting"
   },
   {
     "id": 7,
@@ -67,7 +67,7 @@
     "dimensions": "Length of 58 feet by Width of 14 feet by Height of 19.5 feet",
     "price": "$475",
     "button": "Save",
-    "category": "three"
+    "category": "Bench"
   },
   {
     "id": 8,
@@ -77,7 +77,7 @@
     "dimensions": "Length of 11 feet by Width of 16 feet by Height of 16 feet",
     "price": "n/a",
     "button": "Save",
-    "category": "three"
+    "category": "Bench"
   },
   {
     "id": 9,
@@ -87,6 +87,6 @@
     "dimensions": "Length of 65 feet by Width of 20 feet by Height of 16 feet",
     "price": "$399",
     "button": "Save",
-    "category": "three"
+    "category": "Bench"
   }
 ]

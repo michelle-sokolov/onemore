@@ -34,11 +34,24 @@
     "express-session": "^1.17.0",
     "if-env": "^1.0.4",
     "jslint": "^0.12.1",
+    "mdbreact": "^4.25.4",
     "mongoose": "^5.3.16",
     "native-base": "^2.8.2",
     "nodemailer": "^6.4.5",
     "passport": "^0.4.1",
     "passport-local": "^1.0.0",
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "react-ga": "^2.7.0",
+    "react-responsive": "^8.0.3",
+    "react-router-dom": "^5.1.2",
+>>>>>>> Dilaran
+    "react-router-hash-link": "^1.2.2"
+=======
     "react-native": "^0.61.5"
+>>>>>>> b2952270fbbced87f2d8ed80ddcf96d09ebcfa3a
   }
 }

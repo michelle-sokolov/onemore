@@ -1,6 +1,7 @@
 import React from "react";
 import About from "./About";
 
+
 function HomeItem() {
   return (
     <div>
@@ -8,7 +9,7 @@ function HomeItem() {
       <br />
       <center>
       <About />
-      <h1>HOME PAGE STUFF GOES HERE</h1>
+
       <Carousel>
   <Carousel.Item>
     <img

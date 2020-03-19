@@ -35,7 +35,5 @@ export default class Blog extends Component {
     );
   }
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> master
+

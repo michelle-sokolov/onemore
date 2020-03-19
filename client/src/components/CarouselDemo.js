@@ -10,7 +10,7 @@ import Image3 from "./assets/3.jpg";
 const CarouselDemo = () => (
   <div
     className="App"
-    style={{ width: "600px", margin: "auto", padding: "50px" }}
+    style={{ width: "1200px", margin: "auto", padding: "50px" }}
   >
     <Carousel arrows infinite>
       <img src={Image1} />

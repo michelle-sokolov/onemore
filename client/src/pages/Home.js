@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import HomeItem from "../components/home";
 import Category from "../components/category";
-import About from "../components/About";
-import Category from "../components/category";
 
 class Home extends Component {
   render() {
@@ -10,8 +8,8 @@ class Home extends Component {
       <div>
         <center>
           <HomeItem />
-          <About />
           <Category />
+          <br />
         </center>
       </div>
     );

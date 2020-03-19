@@ -1,4 +1,4 @@
-import React from "react";
+/*import React from "react";
 import Items from "../components/Items";
 import SaveBtn from "../components/SaveBtn";
 import items from "../items.json";
@@ -10,6 +10,7 @@ const mystyle = {
 function Detail(props) {
   return (
     <div style={mystyle}>
+      <button>Saver</button>
       <br /> <br />
       {props.items.map(item => (
         <Items {...item} key={item.id} />
@@ -18,4 +19,4 @@ function Detail(props) {
   );
 }
 
-export default Detail;
+export default Detail; */

@@ -7,7 +7,6 @@ import Contact from "./pages/Contact";
 import Blog from "./pages/Blog";
 import Header from "./components/Header";
 //import Footer from "./components/Footer";
-import Nav from "./components/Nav";
 //import Footer from "./components/Footer/Footer";
 import Nav from "./components/Nav";
 import Article from "./components/article";

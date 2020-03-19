@@ -34,8 +34,6 @@ import "./style.css";
 //             </div>
 //             <div className="projs">
 //               <ul>
-                
-<<<<<<< HEAD
 //               </ul>
 //             </div>
 //           </div>
@@ -44,15 +42,6 @@ import "./style.css";
 //     );
 //   }
 // }
-=======
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    );
-  }
-}
 
 const mystyle = {
   color: "black",
@@ -96,4 +85,4 @@ function About() {
 
 export default About;
 
->>>>>>> 2a2dd94a8f6844d112dbb2a6abacc16b7ab71343
+

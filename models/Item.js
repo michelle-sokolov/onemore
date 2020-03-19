@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
+const Schema = mongoose.Schema;
 
-const cartSchema = new mongoose.Schema({
+const bookSchema = new Schema({
   items: [
     {
       product: {
@@ -10,5 +11,5 @@ const cartSchema = new mongoose.Schema({
     }
   ]
 });
-
-module.exports = mongoose.model("Cart", cartSchema);
+const Item = mongoose.model("Item", itemSchema);
+module.exports = Item;

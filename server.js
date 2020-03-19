@@ -1,6 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const routes = require("./routes");
+const path = require("path");//last changed
 const app = express();
 const PORT = process.env.PORT || 3001;
 
@@ -11,6 +12,13 @@ app.use(express.json());
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
+
+// Send every other request to the React app
+// Define any API routes before this runs
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "./client/build/index.html"));
+}); ////added LAST
+
 // Add routes, both API and view
 app.use(routes);
 
@@ -69,8 +77,20 @@ app.post("/send", (req, res) => {
     res.render("contact", { msg: "Email has been sent" });
   });
 });
-
+ 
 // Start the API server
 app.listen(PORT, function() {
   console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
 });
+
+
+
+// // Define API routes here
+// app.use(routes);
+// // Send every other request to the React app
+// // Define any API routes before this runs
+// app.get("*", (req, res) => {
+//   res.sendFile(path.join(__dirname, "./client/build/index.html"));
+// });
+
+

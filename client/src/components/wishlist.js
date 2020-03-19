@@ -1,71 +1,63 @@
-import React, { Component } from "react";
-// import values from "../items.json";
+import React from "react";
+import API from "../utils/API";
+import SavedContainer from "../components/SavedContainer";
 
-// export default class WishListItem extends Component {
-//   constructor(props) {
-//     super(props);
-//     this.state = {
-//       post: {}
-//     };
-//   }
 
-//   removeUnicode(string) {
-//     if (string.indexOf("&#8217;") >= 0) {
-//       return this.removeUnicode(string.replace("&#8217;", "'"));
-//     } else {
-//       return string;
-//     }
-//   }
 
-//   componentDidMount() {
-//       get(
-//         "items.json" +
-//           this.props.match.params.id
-//       )
-//       .then(res => {
-//         this.setState({ post: res.data });
-//         const container = document.querySelector(".content");
-//         let scr = container.querySelectorAll("script");
-//         scr.forEach(node => {
-//           let parent = node.parentElement;
-//           let d = document.createElement("script");
-//           d.async = node.async;
-//           d.src = node.src;
-//           d.type = "text/javascript";
-//           parent.insertBefore(d, node);
-//           parent.removeChild(node);
-//           d.onload = console.log(d);
-//         });
-//       })
-//       .catch(error => console.log(error));
-//   }
+class SavedBooks extends React.Component {
 
-//   parseOutScripts(content) {}
+    state = {
+        books: [],
+        title: "",
+        author: "",
+        synopsis: "",
 
-//   render() {
-//     if (this.state.post) {
-//       return (
-//         <div className="wishlist">
-//           <div className="list">
-//             {this.state.post.featured_image ? (
-//               <img
-//                 className="img-responsive webpic"
-//                 alt="article header"
-//                 src={this.state.post.featured_image}
-//               />
-//             ) : (
-//               ""
-//             )}
-//             <h1 className="text-center">{this.state.post.name}</h1>
-//             <div
-//               className="content"
-//               dangerouslySetInnerHTML={{ __html: this.state.post.description }}
-//             />
-//           </div>
-//         </div>
-//       );
-//     } else {
-//       return null;
-//     }
-//   }
-// }
+
+    };
+
+    componentDidMount() {
+        this.loadBooks();
+    }
+
+    loadBooks = () => {
+        API.getBooks()
+            .then(res =>
+                this.setState({ books: res.data, title: "", author: "", synopsis: "" }))
+            .catch(err => console.log(err));
+    };
+
+    deleteBook = id => {
+        console.log(id)
+        API.deleteBook(id)
+        .then(res => this.loadBooks())
+        .catch(err => console.log(err));
+    }
+
+    render() {
+        return (
+            <div className="row">
+                <div className="col-md-9 mx-auto">
+                    <h1>Saved Books</h1>
+                    {this.state.books.map(book => (
+                        <div className="row" key={book._id}>
+                            <div className="col-md-12 mx-auto">
+                                <br />
+                                <SavedContainer
+                                    title={book.title}
+                                    author={book.author}
+                                    synopsis={book.synopsis}
+                                    id={book._id}
+                                    link={book.link}
+                                    img={book.img}
+                                    deleteBook={this.deleteBook}
+                                    />
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        );
+    }
+}
+
+export default SavedBooks;

@@ -18,6 +18,7 @@ class Detail extends Component {
         myarray.push(checkboxes[i].value);
       }
       console.log(myarray);
+      document.getElementById("new").innerHTML = myarray;
     }
     return (
       <div>
@@ -39,6 +40,12 @@ class Detail extends Component {
         {this.state.items.map(item => (
           <Items {...item} key={item.id} />
         ))}
+        <center>
+          <h3>MY WISHLIST</h3>
+        </center>
+        <center>
+          <div id="new"></div>
+        </center>
       </div>
     );
   }

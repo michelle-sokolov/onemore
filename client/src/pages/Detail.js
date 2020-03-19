@@ -11,6 +11,7 @@ class One extends Component {
   render() {
     return (
       <div>
+        <div>
         <br />
         <center>
           <h2>Shop All Items</h2>
@@ -22,9 +23,12 @@ class One extends Component {
             started.
           </h5>
         </center>
+         </div>
+        
         {this.state.items.map(item => (
           <Items {...item} key={item.id} />
         ))}
+      
       </div>
     );
   }

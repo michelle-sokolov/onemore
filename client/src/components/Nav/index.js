@@ -24,6 +24,9 @@ function Nav() {
         <a style={mystyle} href="/blog">
           Our Blog{" "}
         </a>
+        <a style={mystyle} href="/auth">
+          Oauth{" "}
+        </a>
       </div>
     </nav>
   );

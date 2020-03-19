@@ -7,27 +7,20 @@ const FooterPage = () => {
       <MDBContainer fluid className="text-center text-md-left">
         <MDBRow>
           <MDBCol md="6">
-            <h5 className="title">Footer Content</h5>
+            <h5 className="title">Thank you for visiting</h5>
             <p>
-              Here you can use rows and columns here to organize your footer
-              content.
+              You also can visit us at our pop-up space at 234 S Beverly Dr
             </p>
           </MDBCol>
           <MDBCol md="6">
-            <h5 className="title">Links</h5>
+            <h5 className="title">Social Media</h5>
             <ul>
               <li className="list-unstyled">
-                <a href="#!">Link 1</a>
+                <a href="#!">His wine page</a>
               </li>
               <li className="list-unstyled">
-                <a href="#!">Link 2</a>
+                <a href="#!">Shopify link</a>
               </li>
-              {/* <li className="list-unstyled">
-                <a href="#!">Link 3</a>
-              </li>
-              <li className="list-unstyled">
-                <a href="#!">Link 4</a>
-              </li> */}
             </ul>
           </MDBCol>
         </MDBRow>

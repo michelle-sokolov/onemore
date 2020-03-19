@@ -10,7 +10,7 @@ export default class ArticlePreview extends Component {
       return string.replace("<p>", "").replace("[&hellip;]</p>", "...");
     }
   }
-
+  
   render() {
     const excerpt = this.removeUnicode(this.props.post.excerpt);
 
@@ -34,15 +34,6 @@ export default class ArticlePreview extends Component {
           {/* <HashLink to={"/blog/" + this.props.post.ID}> */}
 
             <button className="btn">Read More</button>
-=======
-          <button className="btn">Read More</button>
-
-          {/* </HashLink> */}
-=======
-          <Link to={"/blog/" + this.props.post.ID}>
-            <button className="btn">Read More</button>
-          </Link>
-
         </div>
       );
     } else {

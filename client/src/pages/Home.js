@@ -1,16 +1,14 @@
 import React, { Component } from "react";
 import HomeItem from "../components/home";
 import Category from '../components/category';
-import Carousel from '../components/Carousel';
+import CarouselDemo from '../components/CarouselDemo';
 class Home extends Component {
   render() {
     return (
       <div>
         <center>
           <HomeItem />
-          <Carousel />
-         {/* <About /> */}
-
+          <CarouselDemo />
           <Category />
         </center>
       </div>

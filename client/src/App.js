@@ -8,7 +8,7 @@ import Blog from "./pages/Blog";
 import Header from "./components/Header";
 
 import Nav from "./components/Nav";
-// import Footer from "./components/Footer/Footer";
+import Footer from "./components/Footer";
 import Article from "./components/article";
 import "./components/style.css";
 function App() {
@@ -26,7 +26,7 @@ function App() {
           <Route exact path={process.env.PUBLIC_URL + "/blog/:id"} component={Article} />
         </Switch>
       </div>
-      {/* <Footer /> */}
+      <Footer />
     </Router>
   );
 }

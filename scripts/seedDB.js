@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const Product = require("../models/Product");
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/itemlist");
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/mernapp");
 
 const products = [
   {

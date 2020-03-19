@@ -1,20 +1,20 @@
 import React, { Component } from "react";
-import HomeItem from "../components/home";
-// import DemoCarousel from "../components/Carousel/DemoCarousel";
-import About from "../components/About"
-import Category from '../components/category'
+// import HomeItem from "../components/home";
+import Category from "../components/category";
+import About from "../components/About";
+
+
 class Home extends Component {
   render() {
     return (
       <div>
         <center>
-          <HomeItem />
-         {/* <DemoCarousel /> */}
-         <About />
+          {/* <HomeItem /> */}
+          <About />
           <Category />
         </center>
       </div>
     );
   }
 }
-export default Home
+export default Home;

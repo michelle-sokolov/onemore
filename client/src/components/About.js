@@ -28,6 +28,7 @@ function About() {
       />
       <br />
       <center>
+      <div className="about">
         <div style={styler}> About Us</div>
         <p style={mystyle}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -42,6 +43,7 @@ function About() {
           posuere urna nec tincidunt. Vulputate odio ut enim blandit volutpat
           maecenas.
         </p>
+        </div>
       </center>
     </div>
   );

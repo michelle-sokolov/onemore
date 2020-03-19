@@ -8,6 +8,7 @@
     height: 1 0;
   }
   .about,
+  .detail,
   .blog {
     background: rgba(256, 256, 256, 0.9);
     position: relative;

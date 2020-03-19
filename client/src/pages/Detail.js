@@ -39,9 +39,6 @@ class Detail extends Component {
         {this.state.items.map(item => (
           <Items {...item} key={item.id} />
         ))}
-        {/*this.state.myarray.map(item => (
-          <Items {...item} key={item.id} />
-        )) */}
       </div>
     );
   }

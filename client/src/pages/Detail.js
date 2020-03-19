@@ -40,9 +40,7 @@ class Detail extends Component {
         {this.state.items.map(item => (
           <Items {...item} key={item.id} />
         ))}
-        <center>
-          <h3>MY WISHLIST</h3>
-        </center>
+        <center style={{ fontSize: "30px" }}>MY WISHLIST:</center>
         <center>
           <div id="new"></div>
         </center>

@@ -34,7 +34,6 @@ import "./style.css";
 //             </div>
 //             <div className="projs">
 //               <ul>
-                
 //               </ul>
 //             </div>
 //           </div>
@@ -93,4 +92,5 @@ function About() {
 }
 
 export default About;
+
 

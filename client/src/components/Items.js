@@ -12,14 +12,18 @@ const pagestyle = {
 };
 
 function Items(props) {
+  var myarr = [];
   function handleClick(e) {
     e.preventDefault();
-    alert(props.name + " was clicked");
+    myarr.push(props.name);
+    console.log(myarr);
   }
+
   return (
     <div className="wrapper">
       <div>
         <div className="card">
+          <div>items i like: {myarr}</div>
           <div className="content">
             <center>
               <img style={mystyle} alt={props.name} src={props.image} />
@@ -38,6 +42,12 @@ function Items(props) {
                 <strong>Price:</strong> {props.price}
               </li>
               <button onClick={handleClick}>{props.button}</button>
+              {/*<input
+                type="checkbox"
+                id={props.id}
+                name={props.name}
+                value={props.name}
+              />*/}
             </ul>
             <br />
             <br />

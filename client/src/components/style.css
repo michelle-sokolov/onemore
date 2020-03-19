@@ -8,6 +8,7 @@
     height: 1 0;
   }
   .about,
+  .detail,
   .blog {
     background: rgba(256, 256, 256, 0.9);
     position: relative;
@@ -42,85 +43,214 @@
       height: 30vw;
     }
     
+/* 
+  position: fixed;
+  background: var(--p500);
+  width: 100%;
+  position: absolute;
+  top: 80px;
+  min-height: 100%;
+  height: 1 0;
+} */
+
+.blog {
+  background: rgba(256, 256, 256, 0.9);
+  position: relative;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.18), 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+  margin: 0px 5% 20px 5%;
+  padding: 8px 5%;
+  font-size: 24px;
+}
+
+.about,
+.blog {
+  background: rgba(256, 256, 256, 0.9);
+  position: relative;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.18), 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+  margin: 0px 5% 20px 5%;
+  padding: 8px 5%;
+  font-size: 24px;
+}
+.about {
+  margin-top: 20px;
+}
+.aboutText {
+  width: 100%;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.about .twocols {
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.circle {
+  position: relative;
+  border-radius: 50%;
+  width: 30vw;
+  height: 30vw;
+}
+
 @media screen and (max-width: 800px) {
-    .about .twocols,
-    .portfolio .twocols {
-      flex-direction: column;
-      justify-content: center;
-    }
-    #nav-links {
-      display: none;
-    }
-    #nav-collapsed {
-      display: block;
-    }
-    #siteTitle {
-      font-size: 32px;
-    }
-    .circle {
-      width: 50vw;
-      height: 50vw;
-    }
+  .about .twocols,
+  .portfolio .twocols {
+    flex-direction: column;
+    justify-content: center;
   }
-  
-  .sectionTitle {
-    width: 100%;
-    text-align: center;
+  #nav-links {
+    display: none;
   }
-  .twocols {
-    display: -webkit-flex;
-    display: flex;
-    align-items: top;
-    flex-flow: row;
+  #nav-collapsed {
+    display: block;
   }
-  .website,
-  .article {
-    position: relative;
-    background: white;
-    margin: 5%;
-    border-radius: 10px;
-    width: 90%;
-    padding: 5%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.18), 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+  #siteTitle {
+    font-size: 32px;
   }
-  
-  .article {
-    width: 100%;
-    margin: 5% 0;
+  .circle {
+    width: 50vw;
+    height: 50vw;
   }
-  .content {
-    font-size: 18px;
-  }
-  
-  .webpic {
-    width: 100%;
-    margin-bottom: 5%;
-    border-radius: 10px;
-  }
+}
+
+.sectionTitle {
+  width: 100%;
+  text-align: center;
+}
+.twocols {
+  display: -webkit-flex;
+  display: flex;
+  align-items: top;
+  flex-flow: row;
+}
+.website,
+.article {
+  position: relative;
+  background: white;
+  margin: 5%;
+  border-radius: 10px;
+  width: 90%;
+  padding: 5%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.18), 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.article {
+  width: 100%;
+  margin: 5% 0;
+}
+.content {
+  font-size: 18px;
+}
+
+.webpic {
+  width: 100%;
+  margin-bottom: 5%;
+  border-radius: 10px;
+}
+#projs {
+  width: 50%;
+}
+
+.p {
+  font-size: 18px;
+}
+
+@media screen and (max-width: 800px) {
   #projs {
-    width: 50%;
-  }
-  
-  .p {
-    font-size: 18px;
-  }
-  
-  @media screen and (max-width: 800px) {
-    #projs {
-      width: 100%;
-    }
-  }
-  
-  img {
     width: 100%;
-    height: auto;
   }
-  
-  .blackLink {
-    color: black;
-    text-decoration: inherit; /* no underline */
-  }
-  
-  .blackLink:hover {
-    text-decoration: inherit; /* no underline */
-  }
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.blackLink {
+  color: black;
+  text-decoration: inherit; /* no underline */
+}
+
+.blackLink:hover {
+  text-decoration: inherit; /* no underline */
+}
+
+.card {
+  background: #fff;
+  border-radius: 2px;
+  /* height: 500px; */
+  margin: 1rem;
+  position: relative;
+  flex-direction: row;
+  width: 400px;
+  box-shadow: 0 3px 6px #999, 0 3px 6px #999;
+  text-align: left;
+}
+
+.card > .img-container {
+  height: 60%;
+  overflow: hidden;
+  text-align: center;
+  background:#6CADDC;
+}
+.card > .img-container > img {
+  width: 40%
+}
+
+.card > .content {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 15px;
+}
+
+.card > .content > ul {
+  list-style-type: none;
+}
+
+.card > .content > ul > li {
+  margin-top: 18px;
+}
+
+/* .card > .remove {
+  color: #ff1744;
+  font-size: 48px;
+  position: absolute;
+  top: -20px;
+  right: 5px;
+  cursor: pointer;
+}
+
+.card > .remove:hover {
+  color: #d50000;
+} */
+.wrapper {
+  padding-top: 50px;
+  background: white;
+  /* height: 100%; */
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  justify-content: space-around;
+  align-content: flex-start;
+  overflow: auto;
+} 
+/* .row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+} */
+

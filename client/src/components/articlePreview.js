@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-// import { HashLink as Link } from "react-router-hash-link";
-import { Link } from "react-router-dom"; 
+import { Link } from "react-router-dom";
 
 export default class ArticlePreview extends Component {
   removeUnicode(string) {
@@ -10,7 +9,7 @@ export default class ArticlePreview extends Component {
       return string.replace("<p>", "").replace("[&hellip;]</p>", "...");
     }
   }
-
+  
   render() {
     const excerpt = this.removeUnicode(this.props.post.excerpt);
 

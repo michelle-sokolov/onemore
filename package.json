@@ -22,6 +22,10 @@
   },
   "dependencies": {
     "@brainhubeu/react-carousel": "^1.13.7",
+<<<<<<< HEAD
+=======
+    "auth0-js": "^9.12.2",
+>>>>>>> master
     "axios": "^0.18.0",
     "bcryptjs": "^2.4.3",
     "bootstrap": "^4.4.1",

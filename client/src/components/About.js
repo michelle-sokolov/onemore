@@ -46,7 +46,9 @@ import "./style.css";
 const mystyle = {
   color: "black",
   contentAlign: "center",
-  padding: "20px"
+  padding: "20px",
+  marginLeft: "150px",
+  marginRight: "150px"
 };
 const styler = {
   fontSize: "36px",
@@ -61,9 +63,14 @@ const imgstyler = {
 function About() {
   return (
     <div>
-      <img style={imgstyler} src="https://imgur.com/HdB1hmV.png" alt="img" />
+      <img
+        style={imgstyler}
+        src="https://i.ibb.co/1JFF5vN/download-3.jpg"
+        alt="img"
+      />
       <br />
       <center>
+      <div className="about">
         <div style={styler}> About Us</div>
         <p style={mystyle}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -78,6 +85,7 @@ function About() {
           posuere urna nec tincidunt. Vulputate odio ut enim blandit volutpat
           maecenas.
         </p>
+        </div>
       </center>
     </div>
   );

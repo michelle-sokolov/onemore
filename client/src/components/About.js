@@ -3,9 +3,7 @@ import React from "react";
 const mystyle = {
   color: "black",
   contentAlign: "center",
-  padding: "20px",
-  marginLeft: "150px",
-  marginRight: "150px"
+  padding: "20px"
 };
 const styler = {
   fontSize: "36px",
@@ -20,11 +18,7 @@ const imgstyler = {
 function About() {
   return (
     <div>
-      <img
-        style={imgstyler}
-        src="https://i.ibb.co/1JFF5vN/download-3.jpg"
-        alt="img"
-      />
+      <img style={imgstyler} src="https://imgur.com/HdB1hmV.png" alt="img" />
       <br />
       <center>
         <div style={styler}> About Us</div>

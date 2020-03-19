@@ -1,4 +1,4 @@
-/*import React from "react";
+import React from "react";
 import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
 
 const FooterPage = () => {
@@ -24,10 +24,11 @@ const FooterPage = () => {
               </li>
               {/* <li className="list-unstyled">
                 <a href="#!">Link 3</a>
-              </li>
+  </li> */}
               <li className="list-unstyled">
                 <a href="#!">Link 4</a>
-              </li> }
+              </li>{" "}
+              }
             </ul>
           </MDBCol>
         </MDBRow>
@@ -39,6 +40,6 @@ const FooterPage = () => {
       </div>
     </MDBFooter>
   );
-}
+};
 
-export default FooterPage; */
+export default FooterPage;

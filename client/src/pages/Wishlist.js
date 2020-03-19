@@ -6,7 +6,8 @@ class Wishlist extends Component {
     return (
       <div>
         <center>
-          <WishlistItem />
+          {/* <WishlistItem /> */}
+          <h1> content </h1>
         </center>
       </div>
     );

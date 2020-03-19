@@ -18,6 +18,41 @@
   font-size: 24px;
 }
 
+.about,
+.blog {
+  background: rgba(256, 256, 256, 0.9);
+  position: relative;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.18), 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+  margin: 0px 5% 20px 5%;
+  padding: 8px 5%;
+  font-size: 24px;
+}
+.about {
+  margin-top: 20px;
+}
+.aboutText {
+  width: 100%;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.about .twocols {
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.circle {
+  position: relative;
+  border-radius: 50%;
+  width: 30vw;
+  height: 30vw;
+}
+
 @media screen and (max-width: 800px) {
   .about .twocols,
   .portfolio .twocols {

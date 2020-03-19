@@ -1,4 +1,5 @@
 import React from "react";
+
 // import SaveBtn from "../components/SaveBtn";
 
 const mystyle = {
@@ -18,6 +19,7 @@ function Items(props) {
     <div>
       <div>
         <img style={mystyle} alt={props.name} src={props.image} />
+
         <ul>
           <li style={pagestyle}>
             <strong>Name:</strong> {props.name}

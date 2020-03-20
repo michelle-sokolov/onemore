@@ -4,9 +4,14 @@ const mystyle = {
   borderStyle: "solid",
   contentAlign: "center",
   padding: "25px",
-  width: "400px",
-  height: "400px",
+  width: "500px",
+  height: "500px",
   bottomPadding: "100px"
+};
+
+const textstyle = {
+  marginLeft: "150px",
+  marginRight: "150px"
 };
 
 export default class ContactForm extends React.Component {
@@ -23,11 +28,24 @@ export default class ContactForm extends React.Component {
     return (
       <div>
         <br />
-        The sky is the limit at Raven's Restoration, Custom Orders are our
-        speciality.
+        <h1> Contact Us</h1>
         <br />
-        Please leave a detailed message about your custom project and we'll get
-        back to you right away.
+        <p style={textstyle}>
+          Raven’s Restoration wants to emphasize collaboration. The best
+          projects are made with a shared vision between the craftsmen and the
+          visionary. Please, reach out with any ideas or concepts and let’s
+          bring them to realization. Each of these pieces have their unique
+          story and that’s what makes them truly special to both parties. I am
+          grateful to have the opportunity to work with my pops moving forward
+          and I’m excited for the timeless joy these pieces will create for
+          everyone involved.
+          <br />
+          <br />
+          <i>
+            “The place to improve the world is first in one's own heart and head
+            and hands, and then work outward from there.”
+          </i>
+        </p>
         <br />
         <br />
         <form
@@ -38,18 +56,18 @@ export default class ContactForm extends React.Component {
         >
           <label>Email:</label>
           <br />
-          <input type="email" name="email" />
+          <input type="email" name="email" style={{ width: "300px" }} />
           <br />
           <br />
           <label>Phone Number:</label>
           <br />
-          <input type="number" name="number" />
+          <input type="number" name="number" style={{ width: "300px" }} />
           <br />
           <br />
           <label>Message:</label>
           <br />
           <input
-            style={{ height: "150px", width: "300px" }}
+            style={{ height: "200px", width: "400px" }}
             type="text"
             name="message"
           />

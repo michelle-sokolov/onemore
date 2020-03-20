@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Details from "./Details";
 import items from "../items.json";
-
+import "../components/style.css";
 const mystyle = {
   display: "flex",
   marginLeft: "450px"

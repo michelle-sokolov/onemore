@@ -2,7 +2,7 @@ import React, { Component } from "react";
 // import HomeItem from "../components/home";
 import Category from "../components/category";
 
-import About from "../components/About";
+import HomeItem from "../components/home";
 import CarouselDemo from "../components/CarouselDemo";
 
 

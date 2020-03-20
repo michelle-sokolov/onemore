@@ -6,10 +6,11 @@ import Detail from "./pages/Detail"; //shop all page
 import Contact from "./pages/Contact";
 import Blog from "./pages/Blog";
 import Header from "./components/Header";
-//import Footer from "./components/Footer";
 import Nav from "./components/Nav";
+import Footer from "./components/Footer";
 import Article from "./components/article";
 import "./components/style.css";
+
 function App() {
   return (
     <Router>
@@ -29,7 +30,7 @@ function App() {
           />
         </Switch>
       </div>
-      {/*<Footer /> */}
+      <Footer />
     </Router>
   );
 }

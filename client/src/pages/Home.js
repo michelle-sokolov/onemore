@@ -3,8 +3,7 @@ import React, { Component } from "react";
 import Category from "../components/category";
 import About from "../components/About";
 // import { connect } from "react-redux";
-
-
+import CarouselDemo from "../components/CarouselDemo";
 
 class Home extends Component {
   render() {
@@ -25,14 +24,15 @@ class Home extends Component {
         <center>
           {/* <HomeItem /> */}
           <About />
+          <HomeItem />
+          <CarouselDemo />
           <Category />
+          <br />
         </center>
       </div>
     )
   }
 }
-
-
 
   const mapStateToProps = (state) => {
     return {

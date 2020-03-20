@@ -1,17 +1,22 @@
 import React, { Component } from "react";
 import WishlistItem from "../components/wishlist";
+import myarray from "./Detail";
 
-class Wishlist extends Component {
-  render() {
-    return (
-      <div>
-        <center>
-          {/* <WishlistItem /> */}
-          <h1> content </h1>
-        </center>
-      </div>
-    );
-  }
+function Wishlist(props) {
+  // state = {
+  //  myarray: myarray
+  // };
+  return (
+    <div>
+      <center>
+        <h1> content </h1>
+        {/*this.state.myarray.map(item => (
+          <Items {...item} key={item.id} />
+          )) */}
+        {console.log(myarray)}
+      </center>
+    </div>
+  );
 }
 
 export default Wishlist;

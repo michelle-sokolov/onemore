@@ -1,33 +1,27 @@
 import React from "react";
-import "./Details.css";
+import "./style.css";
 
 // import SaveBtn from "../components/SaveBtn";
 
 const mystyle = {
   height: "100px",
-  width: "100px"
+  width: "100%"
 };
 const pagestyle = {
-  width: "500px"
+  width: "100%"
 };
 
 function Items(props) {
-  var myarr = [];
-  function handleClick(e) {
-    e.preventDefault();
-    myarr.push(props.name);
-    console.log(myarr);
-  }
-
   return (
     <div className="wrapper">
       <div>
         <div className="card">
-          <div>items i like: {myarr}</div>
           <div className="content">
             <center>
+            <div className="img-container">
               <img style={mystyle} alt={props.name} src={props.image} />
-            </center>
+             </div>
+             </center>
             <ul>
               <li style={pagestyle}>
                 <strong>Name:</strong> {props.name}
@@ -41,13 +35,12 @@ function Items(props) {
               <li>
                 <strong>Price:</strong> {props.price}
               </li>
-              <button onClick={handleClick}>{props.button}</button>
-              {/*<input
+              <input
                 type="checkbox"
                 id={props.id}
                 name={props.name}
                 value={props.name}
-              />*/}
+              />
             </ul>
             <br />
             <br />

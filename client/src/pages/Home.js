@@ -1,9 +1,8 @@
 import React, { Component } from "react";
-// import HomeItem from "../components/home";
+import HomeItem from "../components/home";
 import Category from "../components/category";
-import About from "../components/About";
-// import { connect } from "react-redux";
-import CarouselDemo from "../components/CarouselDemo";
+import Principles from "../components/Principles";
+//import CarouselDemo from "../components/CarouselDemo";
 
 class Home extends Component {
   render() {
@@ -25,8 +24,9 @@ class Home extends Component {
           {/* <HomeItem /> */}
           <About />
           <HomeItem />
-          <CarouselDemo />
           <Category />
+          <br />
+          <Principles />
           <br />
         </center>
       </div>

@@ -29,6 +29,7 @@ export default class ArticlePreview extends Component {
             )}
             <div className="content">{excerpt}</div>
           </a>
+
           <Link to={"/blog/" + this.props.post.ID}>
             <button className="btn">Read More</button>
           </Link>
@@ -38,4 +39,8 @@ export default class ArticlePreview extends Component {
       return null;
     }
   }
+
 }
+
+
+

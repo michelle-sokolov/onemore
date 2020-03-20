@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-// import HomeItem from "../components/home";
-import Category from "../components/category";
-
 import HomeItem from "../components/home";
+import Category from "../components/category";
 import CarouselDemo from "../components/CarouselDemo";
+import Principles from "../components/Principles";
+//import CarouselDemo from "../components/CarouselDemo";
 
 
 class Home extends Component {
@@ -11,13 +11,22 @@ class Home extends Component {
     return (
       <div>
         <center>
+          {/* <HomeItem /> */}
           <HomeItem />
-          <CarouselDemo />
           <Category />
+          <br />
+          <Principles />
           <br />
         </center>
       </div>
-    );
+    )
   }
 }
-export default Home;
+
+  // const mapStateToProps = (state) => {
+  //   return {
+  //     items: state.items
+  //   }
+  // }
+  
+  export default Home;

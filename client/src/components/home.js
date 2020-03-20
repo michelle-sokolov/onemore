@@ -7,7 +7,9 @@ function HomeItem() {
       <br />
       <br />
       <center>
+
         <About />
+
       </center>
     </div>
   );

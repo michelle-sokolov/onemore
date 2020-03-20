@@ -1,6 +1,5 @@
 import React from "react";
 import Items from "../components/Items";
-import SaveBtn from "../components/SaveBtn";
 import items from "../items.json";
 import "./style.css";
 

@@ -1,15 +1,11 @@
-import React from "react";
-import About from "./About";
+// import React from "react";
+// import About from "./About";
+// import { connect } from "react-redux";
 
-function HomeItem() {
-  return (
-    <div>
-      <br />
-      <br />
-      <center>
-        <About />
-      </center>
-      </div>
-  )
-  }
-export default HomeItem
+// const mapStateToProps = (state)=>{
+//   return {
+//       items: state.items
+//        }
+//   }
+
+//   export default connect(mapStateToProps)(Home)

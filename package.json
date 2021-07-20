@@ -46,7 +46,7 @@
     "react-dom": "^16.13.0",
     "react-ga": "^2.7.0",
     "react-image": "^2.4.0",
-    "react-native": "^0.61.5",
+    "react-native": "^0.62.3",
     "react-redux": "^7.2.0",
     "react-responsive": "^8.0.3",
     "react-responsive-carousel": "^3.1.51",
